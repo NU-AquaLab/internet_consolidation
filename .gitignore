@@ -1,0 +1,10 @@
+*.log
+.idea/
+venv/
+infralocationanalysis/dao/__pycache__/
+infralocationanalysis/src/__pycache__/
+results/
+downloads/
+data/vpn_country_map.json
+*test.py
+src/process_sites.py

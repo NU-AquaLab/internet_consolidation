@@ -1,0 +1,20 @@
+FROM ubuntu:latest
+
+RUN apt-get update
+RUN apt-get install -y cron tzdata
+
+# Set the time zone to the desired value (e.g., Pacific Time)
+RUN ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
+RUN echo "America/Chicago" > /etc/timezone
+
+RUN touch /var/log/cron.log
+
+RUN mkdir /code
+WORKDIR /code
+ADD . /code/
+COPY crontab /etc/cron.d/cjob
+RUN chmod 0644 /etc/cron.d/cjob
+RUN crontab /etc/cron.d/cjob
+RUN chmod +x /code/bash.sh
+
+CMD /code/bash.sh & cron & tail -f /var/log/cron.log
