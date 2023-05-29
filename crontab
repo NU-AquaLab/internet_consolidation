@@ -1,2 +1,0 @@
-03 01 13 4 * root /code/bash.sh >> /var/log/cron.log
-# Empty line
