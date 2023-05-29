@@ -1,12 +1,21 @@
-# consolidation_scripts
+# World global index of Internet Consolidation
+Our goal is to see how centralization varies across countries & regions
+
+Here's the demo if you are interested: [https://public.tableau.com/app/profile/ying.zhang5411/viz/consolidation/menu?publish=yes](https://public.tableau.com/app/profile/ying.zhang5411/viz/consolidation/menu?publish=yes)
 
 ### *Bash file*
 
-Now we have a pipeline of running different countries with our scripts for DNS, CA, CDN service. 
+Now we have a pipeline running Internet consolidation experiment among different countries for DNS, CA, CDN service. 
 
 Country list is defined at `data/countryList.txt`
 
+To run scripts, run `pip install -r /path/to/requirements.txt` to get all dependencies
+
 For DNS service, run `nohup ./bash_dns.sh >bash_dns.log 2>&1 &` 
+
+For CA service, run `nohup ./bash_ca.sh >bash_ca.log 2>&1 &` 
+
+For CDN service, run `nohup ./bash_cdn.sh >bash_cdn.log 2>&1 &`
 
 Final results will be stored into database while internal resources will be uploaded to third party file storage system, e.g. GitHub in this case
 

@@ -28,7 +28,7 @@ for COUNTRY in $(cat ./infralocationanalysis/data/countryList.txt); do
    # Start the Docker container with the environment variable
   while [ "$(docker ps --filter "name=script_container_cdn" --format '{{.ID}}' | grep . | wc -l)" -ge 1 ]; do
     echo "Waiting for script_container_cdn to stop..."
-    sleep 100
+    sleep 60
   done
 
   docker stop $vpn_cdn_container_id
