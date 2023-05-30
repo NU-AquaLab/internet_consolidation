@@ -6,12 +6,12 @@ import requests
 import os
 
 # Replace with your own GitHub username and personal access token
-USERNAME = 'zyalm'
-TOKEN = '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'
+USERNAME = 'xxx'
+TOKEN = 'xxx'
 
 # Replace with the owner and repository name for the repository you want to upload to
-REPO_OWNER = 'zyalm'
-REPO_NAME = 'consolidation_results'
+REPO_OWNER = 'xxx'
+REPO_NAME = 'xxx
 
 
 def git_upload_file(FILE_NAME, FILE_PATH):

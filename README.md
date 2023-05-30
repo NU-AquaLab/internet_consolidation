@@ -51,6 +51,8 @@ NodeVPN: `https://github.com/bubuntux/nordvpn`
 
 ### *Note*
 
+For intermediate file storage, we use personal github token to store the file. You need to either put your own token or change the way of intermediate storage method
+
 It's important to note that we collected data using NordVPN in 50 countries from 2021 to 2023. However, NordVPN discontinued its services in AE, CH, and IN, which explains the inconsistencies in the country mappings across different years.
 
 ### *Here's the design drawing*
