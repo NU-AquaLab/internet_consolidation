@@ -49,6 +49,10 @@ NodeVPN: `https://github.com/bubuntux/nordvpn`
 
 `docker run --rm -e COUNTRY=${COUNTRY_CODE} --net container: ${VPN_CONTAINER_NAME} ${OTHER_CONTAINER_NAME}`
 
+### *Note*
+
+It's important to note that we collected data using NordVPN in 50 countries from 2021 to 2023. However, NordVPN discontinued its services in AE, CH, and IN, which explains the inconsistencies in the country mappings across different years.
+
 ### *Here's the design drawing*
 
 ![](design.png)
